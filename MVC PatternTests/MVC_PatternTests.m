@@ -26,7 +26,7 @@
 
 - (void)testExample
 {
-    STFail(@"Unit tests are not implemented yet in MVC PatternTests");
+    XCTFail(@"Unit tests are not implemented yet in MVC PatternTests");
 }
 
 @end

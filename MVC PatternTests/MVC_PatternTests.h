@@ -6,8 +6,8 @@
 //  Copyright (c) 2013 inveera technologies. All rights reserved.
 //
 
-#import <SenTestingKit/SenTestingKit.h>
+#import <XCTest/XCTest.h>
 
-@interface MVC_PatternTests : SenTestCase
+@interface MVC_PatternTests : XCTestCase
 
 @end

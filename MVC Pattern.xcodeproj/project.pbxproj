@@ -16,7 +16,6 @@
 		5E93ECE916E728A400B6C0E1 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E93ECE816E728A400B6C0E1 /* Default.png */; };
 		5E93ECEB16E728A400B6C0E1 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E93ECEA16E728A400B6C0E1 /* Default@2x.png */; };
 		5E93ECED16E728A400B6C0E1 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 5E93ECEC16E728A400B6C0E1 /* Default-568h@2x.png */; };
-		5E93ECFB16E728A500B6C0E1 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E93ECFA16E728A500B6C0E1 /* SenTestingKit.framework */; };
 		5E93ECFC16E728A500B6C0E1 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E93ECD616E728A400B6C0E1 /* UIKit.framework */; };
 		5E93ECFD16E728A500B6C0E1 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E93ECD816E728A400B6C0E1 /* Foundation.framework */; };
 		5E93ED0516E728A500B6C0E1 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 5E93ED0316E728A500B6C0E1 /* InfoPlist.strings */; };
@@ -55,8 +54,7 @@
 		5E93ECE816E728A400B6C0E1 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		5E93ECEA16E728A400B6C0E1 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		5E93ECEC16E728A400B6C0E1 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		5E93ECF916E728A500B6C0E1 /* MVC PatternTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVC PatternTests.octest"; sourceTree = BUILT_PRODUCTS_DIR; };
-		5E93ECFA16E728A500B6C0E1 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		5E93ECF916E728A500B6C0E1 /* MVC PatternTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MVC PatternTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5E93ED0216E728A500B6C0E1 /* MVC PatternTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MVC PatternTests-Info.plist"; sourceTree = "<group>"; };
 		5E93ED0416E728A500B6C0E1 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		5E93ED0616E728A500B6C0E1 /* MVC_PatternTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MVC_PatternTests.h; sourceTree = "<group>"; };
@@ -93,7 +91,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				5E93ECFB16E728A500B6C0E1 /* SenTestingKit.framework in Frameworks */,
 				5E93ECFC16E728A500B6C0E1 /* UIKit.framework in Frameworks */,
 				5E93ECFD16E728A500B6C0E1 /* Foundation.framework in Frameworks */,
 			);
@@ -116,7 +113,7 @@
 			isa = PBXGroup;
 			children = (
 				5E93ECD216E728A400B6C0E1 /* MVC Pattern.app */,
-				5E93ECF916E728A500B6C0E1 /* MVC PatternTests.octest */,
+				5E93ECF916E728A500B6C0E1 /* MVC PatternTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -128,7 +125,6 @@
 				5E93ECD616E728A400B6C0E1 /* UIKit.framework */,
 				5E93ECD816E728A400B6C0E1 /* Foundation.framework */,
 				5E93ECDA16E728A400B6C0E1 /* CoreGraphics.framework */,
-				5E93ECFA16E728A500B6C0E1 /* SenTestingKit.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
@@ -249,8 +245,8 @@
 			);
 			name = "MVC PatternTests";
 			productName = "MVC PatternTests";
-			productReference = 5E93ECF916E728A500B6C0E1 /* MVC PatternTests.octest */;
-			productType = "com.apple.product-type.bundle";
+			productReference = 5E93ECF916E728A500B6C0E1 /* MVC PatternTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
@@ -258,7 +254,8 @@
 		5E93ECC916E728A400B6C0E1 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0450;
+				LastTestingUpgradeCheck = 0730;
+				LastUpgradeCheck = 0730;
 				ORGANIZATIONNAME = "inveera technologies";
 			};
 			buildConfigurationList = 5E93ECCC16E728A400B6C0E1 /* Build configuration list for PBXProject "MVC Pattern" */;
@@ -383,6 +380,7 @@
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				COPY_PHASE_STRIP = NO;
+				ENABLE_TESTABILITY = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_OPTIMIZATION_LEVEL = 0;
@@ -428,6 +426,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MVC Pattern/MVC Pattern-Prefix.pch";
 				INFOPLIST_FILE = "MVC Pattern/MVC Pattern-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inveera.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -439,6 +438,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MVC Pattern/MVC Pattern-Prefix.pch";
 				INFOPLIST_FILE = "MVC Pattern/MVC Pattern-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inveera.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -451,13 +451,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MVC Pattern/MVC Pattern-Prefix.pch";
 				INFOPLIST_FILE = "MVC PatternTests/MVC PatternTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inveera.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Debug;
 		};
@@ -468,13 +469,14 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
 					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+					"$(inherited)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MVC Pattern/MVC Pattern-Prefix.pch";
 				INFOPLIST_FILE = "MVC PatternTests/MVC PatternTests-Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.inveera.${PRODUCT_NAME:rfc1034identifier}";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				TEST_HOST = "$(BUNDLE_LOADER)";
-				WRAPPER_EXTENSION = octest;
 			};
 			name = Release;
 		};
@@ -497,6 +499,7 @@
 				5E93ED0D16E728A500B6C0E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		5E93ED0E16E728A500B6C0E1 /* Build configuration list for PBXNativeTarget "MVC PatternTests" */ = {
 			isa = XCConfigurationList;
@@ -505,6 +508,7 @@
 				5E93ED1016E728A500B6C0E1 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
