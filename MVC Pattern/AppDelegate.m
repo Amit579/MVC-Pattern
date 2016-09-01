@@ -7,19 +7,31 @@
 //
 
 #import "AppDelegate.h"
-
-#import "ViewController.h"
+#import "DetailsViewController.h"
 
 @implementation AppDelegate
+@synthesize window = _window;
+
+- (void)dealloc
+{
+   // [_window release];
+    
+  //  [super dealloc];
+}
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
     self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
-    // Override point for customization after application launch.
-    self.viewController = [[ViewController alloc] initWithNibName:@"ViewController" bundle:nil];
-    self.window.rootViewController = self.viewController;
+    detailsViewController = [[DetailsViewController alloc] init];
+    self.window.rootViewController = detailsViewController;
     [self.window makeKeyAndVisible];
     return YES;
+
+    // Override point for customization after application launch.
+    //self.detailsViewController = [[DetailsViewController alloc] initWithNibName:@"DetailsViewController" bundle:nil];
+    //self.window.rootViewController = self.detailsViewController;
+    //[self.window makeKeyAndVisible];
+   // return YES;
 }
 
 - (void)applicationWillResignActive:(UIApplication *)application

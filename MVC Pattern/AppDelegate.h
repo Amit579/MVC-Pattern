@@ -8,12 +8,15 @@
 
 #import <UIKit/UIKit.h>
 
-@class ViewController;
+@class DetailsViewController;
 
 @interface AppDelegate : UIResponder <UIApplicationDelegate>
+{
+    DetailsViewController*detailsViewController;
+}
 
 @property (strong, nonatomic) UIWindow *window;
 
-@property (strong, nonatomic) ViewController *viewController;
+//@property (strong, nonatomic) DetailsViewController *detailsviewController;
 
 @end

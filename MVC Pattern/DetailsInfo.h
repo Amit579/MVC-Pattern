@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  DetailsInfo.h
 //  MVC Pattern
 //
 //  Created by inveera technologies on 3/6/13.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
+@interface DetailsInfo : UIView
 
 @end
